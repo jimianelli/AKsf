@@ -7,3 +7,6 @@
   and opt-in international reporting area 550.
 - Dateline-safe default projection, composable map layers, provenance manifest,
   reproducible data builds, offline tests, and cross-platform CI.
+
+- Added AFSC ecosystem integration guide covering coldpool, akgfmaps, and navmaps,
+  with explicit redundancy, complementary capabilities, and optional examples.

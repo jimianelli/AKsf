@@ -70,6 +70,23 @@ federal_stat <- stat[stat$WATERS_CODE == "FED", ]
 ai_ll <- get_reporting_areas(c("541", "542", "543"), proj = 4326)
 ```
 
+## Working with AFSC GAP products
+
+AKsf overlaps substantially with [akgfmaps](https://github.com/afsc-gap-products/akgfmaps)
+for NMFS/ADF&G boundaries, basemaps, and plotting. Keep akgfmaps for survey
+strata, stations, design history, bathymetry, and detailed coastlines. AKsf adds
+its documented six-plan NPFMC reference catalog, source provenance, and a
+consistent layer interface; it does not replace the AFSC survey framework.
+
+Use [coldpool](https://github.com/afsc-gap-products/coldpool) for temperature
+surfaces and cold-pool indices, with AKsf boundaries as management context.
+Use [navmaps](https://github.com/afsc-gap-products/navmaps) for survey-layer exports;
+AKsf reference polygons can be handed off as explicitly labeled GIS outlines.
+
+See the [integration guide](docs/AFSC-INTEGRATION.md) for the **overlap and added-value
+matrix**, concrete differences between area inventories, and runnable examples.
+No AFSC datasets or exporters are duplicated into AKsf by these integrations.
+
 ## FMP coverage
 
 | Plan ID | Spatial representation |
