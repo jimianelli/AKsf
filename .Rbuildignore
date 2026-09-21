@@ -1,0 +1,11 @@
+^\.github$
+^\.gitignore$
+^data-raw$
+^AKsf\.Rproj$
+^README\.md$
+^NEWS\.md$
+^CONTRIBUTING\.md$
+^DATA_SOURCES\.md$
+^LICENSE-DATA\.md$
+^docs$
+^LICENSE\.md$

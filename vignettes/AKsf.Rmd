@@ -1,0 +1,91 @@
+---
+title: "Mapping Alaska fisheries with AKsf"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Mapping Alaska fisheries with AKsf}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 5)
+library(AKsf)
+library(ggplot2)
+```
+
+AKsf uses the same building-block approach as nzsf: getters return `sf` objects,
+and plotters add `geom_sf` layers. The bundled snapshots make this tutorial work
+offline. Source definitions and derivations are documented in the repository’s
+`DATA_SOURCES.md`.
+
+```{r map}
+ggplot() +
+  plot_reporting_areas(c("541", "542", "543"), fill = "#b5d9e8",
+                        colour = "#345b6c", linewidth = 0.3) +
+  plot_coast(fill = "grey88", colour = "grey50", linewidth = 0.15) +
+  coord_aksf() + theme_aksf()
+```
+
+`coord_aksf()` and the default projected getters keep the western Aleutians near
+the rest of Alaska. A geographic longitude range can instead span nearly the
+entire world. Use the same CRS for data and analytical operations.
+
+## Plans and agency units
+
+```{r plans}
+get_fmp_catalog()[, c("fmp_id", "plan_name")]
+fmp <- get_fmp_areas(c("BSAI_GF", "GOA_GF"))
+fmp[, c("fmp_id", "geometry_basis", "boundary_status")]
+```
+
+The six FMPs overlap across fisheries. Salmon has East, West, and Cook Inlet
+features. Crab extends eastward to Scotch Cap south of the Aleutians, whereas
+the BSAI groundfish boundary is farther west. These broad reference polygons do
+not describe stock boundaries, closures, or permission to fish.
+
+## Joining reporting areas to observations
+
+```{r join}
+observations <- data.frame(station = c("west", "central"),
+                           longitude = c(-176, -172), latitude = c(52, 53))
+points <- sf::st_as_sf(observations, coords = c("longitude", "latitude"), crs = 4326)
+points <- sf::st_transform(points, proj_aksf())
+areas <- get_reporting_areas(c("541", "542", "543"))
+# Dissolve multipart source records by code before assigning a code to points.
+by_code <- aggregate(areas["area_code"], by = list(code = areas$area_code), FUN = unique)
+hits <- sf::st_intersects(points, by_code)
+# Zero matches are outside coverage; multiple matches may lie on a boundary.
+points$n_matches <- lengths(hits)
+points$reporting_area <- vapply(hits, function(i) {
+  if (length(i) == 1L) by_code$code[i] else NA_character_
+}, character(1))
+sf::st_drop_geometry(points)
+```
+
+Do not silently choose the first polygon for a boundary point. State-water areas
+and the Donut Hole are not interchangeable with U.S. federal FMP coverage.
+
+## ADF&G codes and provenance
+
+```{r adfg}
+registration <- get_registration_areas()
+sf::st_drop_geometry(registration)[, c("area_code", "area_name")]
+# The complete six-digit groundfish statistical layer is also bundled:
+# stat <- get_statistical_areas()
+# federal <- stat[stat$WATERS_CODE == "FED", ]
+```
+
+Use character strings for joins with area codes. ADF&G’s native hierarchy and
+source date fields remain available. Groundfish polygons are not universal
+reporting grids for every fishery.
+
+```{r provenance}
+# A JSON manifest, readable without installing additional runtime packages.
+cat(head(get_sources(), 10), sep = "\n")
+```
+
+Retrieval dates identify the snapshot, not when a boundary became legally
+effective. In particular, NOAA ATB’s salmon West source has a 2023 edit date;
+AKsf separates Cook Inlet following the 2024 plan but does not certify every
+source exclusion against later amendments. For regulatory work consult current
+NOAA, ADF&G, and NPFMC materials.

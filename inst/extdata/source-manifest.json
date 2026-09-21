@@ -1,0 +1,94 @@
+[
+  {
+    "dataset": "nmfs_reporting_areas",
+    "source_url": "https://alaskafisheries.noaa.gov/arcgis/rest/services/Base_Map/MapServer/0",
+    "where": "1=1",
+    "retrieved_utc": "2026-09-21T14:46:20.305706+00:00",
+    "feature_count": 25,
+    "output_crs": "EPSG:4326",
+    "sha256": "e8a5c5483c12cc163938c53b0e4e54551d5348f0cec5156c126cf0e72095936d",
+    "source_crs": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "source_editing_info": null
+  },
+  {
+    "dataset": "adfg_groundfish_statistical_areas",
+    "source_url": "https://services.arcgis.com/VdkVOAHovLuozJG4/arcgis/rest/services/Groundfish_Statistical_Areas_2001/FeatureServer/0",
+    "where": "1=1",
+    "retrieved_utc": "2026-09-21T14:46:59.441778+00:00",
+    "feature_count": 1735,
+    "output_crs": "EPSG:4326",
+    "sha256": "4d9b332f1fd136e52702e701395390c9daa6c56806ca1e74212fa8ef35b7e45f",
+    "source_crs": {
+      "wkid": 4326,
+      "latestWkid": 4326
+    },
+    "source_editing_info": {
+      "lastEditDate": 1565042041121,
+      "schemaLastEditDate": 1565042041121,
+      "dataLastEditDate": 1565042041121
+    }
+  },
+  {
+    "dataset": "adfg_groundfish_registration_areas",
+    "source_url": "https://services.arcgis.com/VdkVOAHovLuozJG4/arcgis/rest/services/Commercial_Fisheries_Groundfish_Registration_Areas/FeatureServer/0",
+    "where": "1=1",
+    "retrieved_utc": "2026-09-21T14:46:52.936910+00:00",
+    "feature_count": 8,
+    "output_crs": "EPSG:4326",
+    "sha256": "ceb0b5e465bab520da62fe9faceb24d37efb99d047d8eb9db6f674e6902ddcb9",
+    "source_crs": {
+      "wkid": 4326,
+      "latestWkid": 4326
+    },
+    "source_editing_info": {
+      "lastEditDate": 1618932541434,
+      "schemaLastEditDate": 1618932541434,
+      "dataLastEditDate": 1618932541434
+    }
+  },
+  {
+    "dataset": "salmon_west_source",
+    "source_url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/NMFS_Management_Areas_ATB/FeatureServer/126",
+    "where": "SiteName = 'Salmon Management Area West' AND Action_Organization = 'NPFMC'",
+    "retrieved_utc": "2026-09-21T14:47:32.675677+00:00",
+    "feature_count": 1,
+    "output_crs": "EPSG:4326",
+    "sha256": "9b19856e367a3926c5dc361c1778d0a6c39495e5d428fd5cc230e63025271631",
+    "source_crs": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "source_editing_info": {
+      "lastEditDate": 1733419379508,
+      "schemaLastEditDate": 1733419379508,
+      "dataLastEditDate": 1715605501448
+    }
+  },
+  {
+    "dataset": "arctic_management_area",
+    "source_url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/NMFS_Management_Areas_ATB/FeatureServer/126",
+    "where": "SiteName = 'Arctic Closure' AND Action_Organization = 'NPFMC'",
+    "retrieved_utc": "2026-09-21T14:46:08.269596+00:00",
+    "feature_count": 1,
+    "output_crs": "EPSG:4326",
+    "sha256": "018127c00e104e6acda42df14353406c17958f58f81e077a06343228b1b92f6b",
+    "source_crs": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "source_editing_info": {
+      "lastEditDate": 1733419379508,
+      "schemaLastEditDate": 1733419379508,
+      "dataLastEditDate": 1715605501448
+    }
+  },
+  {
+    "dataset": "alaska_coast",
+    "source_url": "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_1_states_provinces.zip",
+    "retrieved_utc": "2026-09-21T15:00:44.564071+00:00",
+    "sha256": "efc59726337323058f9446210adc96673179cd344e053666ee3d28cb58ba2b05"
+  }
+]

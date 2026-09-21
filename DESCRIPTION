@@ -1,0 +1,22 @@
+Package: AKsf
+Title: Alaska Fisheries Spatial Features
+Version: 0.1.0
+Authors@R: person("Jim", "Ianelli", email = "jim.ianelli@gmail.com", role = c("aut", "cre"))
+Description: Alaska fisheries mapping with simple features and composable
+    'ggplot2' layers. Includes NOAA reporting areas, Alaska Department of Fish
+    and Game groundfish statistical and registration areas, and documented
+    reference geometry for North Pacific Fishery Management Council fishery
+    management plans. Retains agency identifiers and data provenance and uses
+    an Alaska Albers projection for mapping across the antimeridian.
+License: MIT + file LICENSE
+URL: https://github.com/jimianelli/AKsf
+BugReports: https://github.com/jimianelli/AKsf/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: sf, ggplot2, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, jsonlite, roxygen2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+LazyDataCompression: xz
+Config/roxygen2/version: 8.0.0

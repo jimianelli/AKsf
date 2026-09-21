@@ -1,0 +1,1001 @@
+{
+  "currentVersion": 12,
+  "id": 126,
+  "name": "NMFS_Management_Areas_ATB",
+  "type": "Feature Layer",
+  "serviceItemId": "63aa4c76020d4b7385c40f31ebc02e7a",
+  "cacheMaxAge": 30,
+  "displayField": "SiteName",
+  "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This dataset contains information on United States fishery management areas. These data were originally compiled from NMFS and Council sources by the Council Coordination Committee Area-Based Management Subcommittee. All areas in the CCC dataset were based on Council actions only; NMFS has supplemented this dataset with non-Council management actions such as Highly-Migratory Species (HMS) management areas.</SPAN></P></DIV></DIV></DIV>",
+  "copyrightText": "The Council Coordination Committee Area-Based Management Subcommittee, Pacific States Marine Fisheries Commission, NOAA Fisheries Service",
+  "defaultVisibility": true,
+  "editingInfo": {
+    "lastEditDate": 1733419379508,
+    "schemaLastEditDate": 1733419379508,
+    "dataLastEditDate": 1715605501448
+  },
+  "relationships": [],
+  "isDataVersioned": false,
+  "hasContingentValuesDefinition": false,
+  "supportsAppend": true,
+  "supportsCalculate": true,
+  "supportsASyncCalculate": true,
+  "supportsTruncate": true,
+  "supportsAttachmentsByUploadId": true,
+  "supportsAttachmentsResizing": true,
+  "supportsRollbackOnFailureParameter": true,
+  "supportsStatistics": true,
+  "supportsExceedsLimitStatistics": true,
+  "supportsAdvancedQueries": true,
+  "supportsValidateSql": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsLayerOverrides": true,
+  "supportsTilesAndBasicQueriesMode": true,
+  "supportsFieldDescriptionProperty": true,
+  "supportsQuantizationEditMode": true,
+  "supportsColumnStoreIndex": true,
+  "supportsApplyEditsWithGlobalIds": false,
+  "supportsMultiScaleGeometry": true,
+  "supportsReturningQueryGeometry": true,
+  "enableNullGeometry": false,
+  "hasGeometryProperties": true,
+  "geometryProperties": {
+    "shapeAreaFieldName": "Shape__Area",
+    "shapeLengthFieldName": "Shape__Length",
+    "units": "esriMeters"
+  },
+  "advancedQueryCapabilities": {
+    "supportsPagination": true,
+    "supportsPaginationOnAggregatedQueries": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsQueryWithDistance": true,
+    "supportsOutDistance": true,
+    "supportsReturningQueryExtent": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsQueryWithResultType": true,
+    "supportsSqlExpression": true,
+    "supportsTimeRelation": true,
+    "supportsAdvancedQueryRelated": true,
+    "supportsCountDistinct": true,
+    "supportsPercentileStatistics": true,
+    "supportsApproxPercentileStatistics": true,
+    "supportsSpatialAggregationStatistics": true,
+    "supportsTrueCurve": true,
+    "supportedSpatialAggregationStatistics": [
+      "EnvelopeAggregate",
+      "CentroidAggregate",
+      "ConvexHullAggregate"
+    ],
+    "supportsLod": true,
+    "supportsQueryWithLodSR": false,
+    "supportedLodTypes": [
+      "geohash"
+    ],
+    "supportsReturningGeometryCentroid": true,
+    "supportsReturningGeometryEnvelope": true,
+    "supportsReturningGeometryProperties": true,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsCurrentUserQueries": true,
+    "supportsHavingClause": true,
+    "supportsOutFieldSQLExpression": true,
+    "supportsMaxRecordCountFactor": true,
+    "supportsTopFeaturesQuery": true,
+    "supportsDisjointSpatialRel": true,
+    "supportsQueryWithCacheHint": true,
+    "supportedOperationsWithCacheHint": [
+      "query",
+      "queryTopFilter",
+      "queryAnalytics",
+      "queryAttachments",
+      "queryRelated",
+      "queryBins",
+      "queryPivot"
+    ],
+    "supportsQueryAnalytic": true,
+    "supportsQueryPivot": true,
+    "supportsQueryBins": true,
+    "supportsDefaultSR": true,
+    "supportsTranslations": false,
+    "supportsAggIds": true,
+    "supportsQueryWithCollation": true,
+    "supportsISODOW": true,
+    "supportsISOWeek": true,
+    "supportsFullTextSearch": true,
+    "fullTextSearchCapabilities": {
+      "supportsAccentSensitivity": true,
+      "supportsStopWords": true,
+      "supportsSearchOperator": true,
+      "supportsOperator": true
+    }
+  },
+  "advancedQueryAnalyticCapabilities": {
+    "supportsLinearRegression": true,
+    "supportsTrendlineRegression": true,
+    "supportsAsync": true,
+    "supportsPercentileAnalytic": true
+  },
+  "queryBinsCapabilities": {
+    "supportsAsync": true,
+    "supportsAutoIntervalBin": true,
+    "supportsFixedIntervalBin": true,
+    "supportsFixedBoundariesBin": true,
+    "supportsDateBin": true,
+    "supportsClassificationBin": true,
+    "supportsStackBy": true,
+    "supportsSplitBy": true,
+    "supportsFirstDayOfWeek": true,
+    "supportsSnapToData": true,
+    "supportsReturnFullIntervalBin": true,
+    "supportsReturnStackValueRange": true,
+    "supportsNormalization": true,
+    "supportedStatisticTypes": [
+      "COUNT",
+      "SUM",
+      "AVG",
+      "VAR",
+      "STDDEV",
+      "MIN",
+      "MAX",
+      "PERCENTILE_CONT",
+      "PERCENTILE_DISC",
+      "APPROX_PERCENTILE_CONT",
+      "APPROX_PERCENTILE_DISC",
+      "CentroidAggregate",
+      "EnvelopeAggregate",
+      "ConvexHullAggregate"
+    ],
+    "supportedNormalizationTypes": [
+      "boxCox",
+      "field",
+      "inverse",
+      "log",
+      "naturalLog",
+      "percentOfTotal",
+      "squareRoot"
+    ]
+  },
+  "supportedOperationsWithCollation": "query,addField,updateField",
+  "advancedEditingCapabilities": {
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportsAsyncApplyEdits": true,
+    "supportsReturnEditResults": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF",
+    "supportsTranslation": false,
+    "supportsMaxTranslations": 10
+  },
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "useStandardizedQueries": true,
+  "geometryType": "esriGeometryPolygon",
+  "minScale": 0,
+  "maxScale": 0,
+  "extent": {
+    "xmin": -20037507.067161843,
+    "ymin": -1640331.820941336,
+    "xmax": 20037507.067161843,
+    "ymax": 12808186.326995997,
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    }
+  },
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  },
+  "drawingInfo": {
+    "renderer": {
+      "type": "uniqueValue",
+      "field1": "Constancy",
+      "defaultSymbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+          130,
+          130,
+          130,
+          255
+        ],
+        "outline": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            110,
+            110,
+            110,
+            255
+          ],
+          "width": 0.7
+        }
+      },
+      "defaultLabel": "<all other values>",
+      "uniqueValueInfos": [
+        {
+          "symbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              115,
+              223,
+              255,
+              102
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "style": "esriSLSSolid",
+              "color": [
+                110,
+                110,
+                110,
+                255
+              ],
+              "width": 0.7
+            }
+          },
+          "value": "year-round",
+          "label": "year-round"
+        },
+        {
+          "symbol": {
+            "type": "esriSFS",
+            "style": "esriSFSBackwardDiagonal",
+            "color": [
+              115,
+              223,
+              255,
+              255
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "style": "esriSLSSolid",
+              "color": [
+                110,
+                110,
+                110,
+                255
+              ],
+              "width": 0.7
+            }
+          },
+          "value": "seasonal",
+          "label": "seasonal"
+        }
+      ],
+      "fieldDelimiter": ",",
+      "authoringInfo": {
+        "colorRamp": {
+          "type": "multipart",
+          "colorRamps": [
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                197,
+                231,
+                255
+              ],
+              "toColor": [
+                252,
+                197,
+                231,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                183,
+                252,
+                179,
+                255
+              ],
+              "toColor": [
+                183,
+                252,
+                179,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                189,
+                248,
+                252,
+                255
+              ],
+              "toColor": [
+                189,
+                248,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                227,
+                179,
+                255
+              ],
+              "toColor": [
+                252,
+                227,
+                179,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                179,
+                180,
+                252,
+                255
+              ],
+              "toColor": [
+                179,
+                180,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                225,
+                252,
+                215,
+                255
+              ],
+              "toColor": [
+                225,
+                252,
+                215,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                202,
+                215,
+                252,
+                255
+              ],
+              "toColor": [
+                202,
+                215,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                238,
+                179,
+                252,
+                255
+              ],
+              "toColor": [
+                238,
+                179,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                218,
+                215,
+                255
+              ],
+              "toColor": [
+                252,
+                218,
+                215,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                182,
+                179,
+                255
+              ],
+              "toColor": [
+                252,
+                182,
+                179,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                231,
+                252,
+                182,
+                255
+              ],
+              "toColor": [
+                231,
+                252,
+                182,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                236,
+                212,
+                252,
+                255
+              ],
+              "toColor": [
+                236,
+                212,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                189,
+                252,
+                228,
+                255
+              ],
+              "toColor": [
+                189,
+                252,
+                228,
+                255
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "scaleSymbols": true,
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "allowGeometryUpdates": true,
+  "trueCurveSupportMode": "OGC",
+  "supportedCurveTypes": [
+    "esriGeometryCircularArc"
+  ],
+  "supportedTrueCurvePbfFeatureEncodings": [
+    "esriCompressedShapeBuffer",
+    "esriDefault"
+  ],
+  "allowTrueCurvesUpdates": true,
+  "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+  "hasAttachments": false,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "hasMetadata": true,
+  "hasM": false,
+  "hasZ": false,
+  "objectIdField": "OBJECTID",
+  "uniqueIdField": {
+    "name": "OBJECTID",
+    "isSystemMaintained": true
+  },
+  "globalIdField": "",
+  "typeIdField": "Constancy",
+  "collation": {
+    "locale": "neutral",
+    "caseSensitive": false,
+    "accentSensitive": true
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "nullable": false,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "SiteID",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Site ID (ATB LocID)",
+      "sqlType": "sqlTypeOther",
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "SiteName",
+      "type": "esriFieldTypeString",
+      "alias": "Site Name",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "ManagingAuthority",
+      "type": "esriFieldTypeString",
+      "alias": "Managing Authority",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "YearEstablished",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Year Established",
+      "sqlType": "sqlTypeOther",
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Constancy",
+      "type": "esriFieldTypeString",
+      "alias": "Constancy",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Permanence",
+      "type": "esriFieldTypeString",
+      "alias": "Permanence",
+      "sqlType": "sqlTypeOther",
+      "length": 15,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "AreaKm2",
+      "type": "esriFieldTypeSingle",
+      "alias": "Area (km^2)",
+      "sqlType": "sqlTypeOther",
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "RegulationURL",
+      "type": "esriFieldTypeString",
+      "alias": "Regulation URL",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "ATB_AreaID",
+      "type": "esriFieldTypeString",
+      "alias": "ATB Area ID",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Action_Organization",
+      "type": "esriFieldTypeString",
+      "alias": "Action Organization",
+      "sqlType": "sqlTypeOther",
+      "length": 10,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Area_Group",
+      "type": "esriFieldTypeString",
+      "alias": "Area Group",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "FMP",
+      "type": "esriFieldTypeString",
+      "alias": "FMP",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Action",
+      "type": "esriFieldTypeString",
+      "alias": "Action",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Prohibit_all_BTG",
+      "type": "esriFieldTypeString",
+      "alias": "All bottom tending gears prohibited",
+      "sqlType": "sqlTypeOther",
+      "length": 10,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Prohibit_MBTG",
+      "type": "esriFieldTypeString",
+      "alias": "Mobile bottom tending gears prohibited",
+      "sqlType": "sqlTypeOther",
+      "length": 10,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Prohibit_bot_trawl",
+      "type": "esriFieldTypeString",
+      "alias": "Bottom trawls prohibited",
+      "sqlType": "sqlTypeOther",
+      "length": 10,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Prohibit_dredge",
+      "type": "esriFieldTypeString",
+      "alias": "Dredges prohibited",
+      "sqlType": "sqlTypeOther",
+      "length": 10,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Prohibit_other",
+      "type": "esriFieldTypeString",
+      "alias": "Other gears prohibited",
+      "sqlType": "sqlTypeOther",
+      "length": 10,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Area_nm2",
+      "type": "esriFieldTypeSingle",
+      "alias": "Area (nm2)",
+      "sqlType": "sqlTypeOther",
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "ATB_SortID",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "ATB SortID",
+      "sqlType": "sqlTypeOther",
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Regs_boundaries",
+      "type": "esriFieldTypeString",
+      "alias": "Regs. link, boundaries",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Regs_group",
+      "type": "esriFieldTypeString",
+      "alias": "Regs. link, group",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Regs_subpart",
+      "type": "esriFieldTypeString",
+      "alias": "Regs. link, subpart",
+      "sqlType": "sqlTypeOther",
+      "length": 255,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "last_edited_date",
+      "type": "esriFieldTypeDate",
+      "alias": "last_edited_date",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null,
+      "precision": 1
+    },
+    {
+      "name": "Purpose",
+      "type": "esriFieldTypeString",
+      "alias": "Purpose",
+      "sqlType": "sqlTypeOther",
+      "length": 500,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Source",
+      "type": "esriFieldTypeString",
+      "alias": "Source",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Area",
+      "sqlType": "sqlTypeDouble",
+      "nullable": true,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Length",
+      "sqlType": "sqlTypeDouble",
+      "nullable": true,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "indexes": [
+    {
+      "name": "PK__NMFS_MAN__F4B70D85185CD5F3",
+      "fields": "OBJECTID",
+      "isAscending": true,
+      "isUnique": true,
+      "description": "",
+      "indexType": "Attribute"
+    },
+    {
+      "name": "user_14963.NMFS_MANAGEMENT_AREAS_ATB_NMFS_MANAGEMENT_AREAS_ATB2_Shape_sidx",
+      "fields": "Shape",
+      "isAscending": true,
+      "isUnique": false,
+      "description": "",
+      "indexType": "Spatial"
+    },
+    {
+      "name": "Shape__Area_Index",
+      "fields": "Shape__Area",
+      "isAscending": true,
+      "isUnique": false,
+      "description": "",
+      "indexType": "Attribute"
+    },
+    {
+      "name": "Shape__Length_Index",
+      "fields": "Shape__Length",
+      "isAscending": true,
+      "isUnique": false,
+      "description": "",
+      "indexType": "Attribute"
+    },
+    {
+      "name": "SiteName_Index",
+      "fields": "SiteName",
+      "isAscending": true,
+      "isUnique": false,
+      "description": "SiteName_Index",
+      "indexType": "Attribute"
+    }
+  ],
+  "dateFieldsTimeReference": {
+    "timeZone": "UTC",
+    "timeZoneIANA": "Etc/UTC",
+    "respectsDaylightSaving": false
+  },
+  "preferredTimeReference": null,
+  "types": [
+    {
+      "id": "year-round",
+      "name": "year-round",
+      "domains": {},
+      "templates": [
+        {
+          "name": "year-round",
+          "description": "",
+          "drawingTool": "esriFeatureEditToolPolygon",
+          "prototype": {
+            "attributes": {
+              "Purpose": null,
+              "Source": null,
+              "SiteID": null,
+              "SiteName": null,
+              "ManagingAuthority": null,
+              "YearEstablished": null,
+              "Constancy": "year-round",
+              "Permanence": null,
+              "AreaKm2": null,
+              "RegulationURL": null,
+              "ATB_AreaID": null,
+              "Action_Organization": null,
+              "Area_Group": null,
+              "FMP": null,
+              "Action": null,
+              "Prohibit_all_BTG": null,
+              "Prohibit_MBTG": null,
+              "Prohibit_bot_trawl": null,
+              "Prohibit_dredge": null,
+              "Prohibit_other": null,
+              "Area_nm2": null,
+              "ATB_SortID": null,
+              "Regs_boundaries": null,
+              "Regs_group": null,
+              "Regs_subpart": null,
+              "last_edited_date": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "seasonal",
+      "name": "seasonal",
+      "domains": {},
+      "templates": [
+        {
+          "name": "seasonal",
+          "description": "",
+          "drawingTool": "esriFeatureEditToolPolygon",
+          "prototype": {
+            "attributes": {
+              "Purpose": null,
+              "Source": null,
+              "SiteID": null,
+              "SiteName": null,
+              "ManagingAuthority": null,
+              "YearEstablished": null,
+              "Constancy": "seasonal",
+              "Permanence": null,
+              "AreaKm2": null,
+              "RegulationURL": null,
+              "ATB_AreaID": null,
+              "Action_Organization": null,
+              "Area_Group": null,
+              "FMP": null,
+              "Action": null,
+              "Prohibit_all_BTG": null,
+              "Prohibit_MBTG": null,
+              "Prohibit_bot_trawl": null,
+              "Prohibit_dredge": null,
+              "Prohibit_other": null,
+              "Area_nm2": null,
+              "ATB_SortID": null,
+              "Regs_boundaries": null,
+              "Regs_group": null,
+              "Regs_subpart": null,
+              "last_edited_date": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "templates": [],
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "supportedAppendFormats": "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService,pbf",
+  "supportedAppendSourceFilterFormats": "sqlite,geoPackage,shapefile,filegdb,featureService",
+  "supportedExportFormats": "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,kml,excel,parquet",
+  "supportedConvertFileFormats": "JSON,PBF,Parquet",
+  "supportedConvertContentFormats": "LayerEditCollection,FeatureCollection",
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelIndexIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin",
+    "esriSpatialRelDisjoint",
+    "esriSpatialRelRelation"
+  ],
+  "guidFormat": "",
+  "supportsContingentValues": true,
+  "supportsEditingContingentValues": true,
+  "supportedContingentValuesFormats": "JSON, PBF",
+  "supportsFieldGroups": true,
+  "supportedSyncDataOptions": 260,
+  "hasStaticData": false,
+  "maxRecordCount": 2000,
+  "standardMaxRecordCount": 2000,
+  "maxIdsCount": 1000000,
+  "standardMaxRecordCountNoGeometry": 32000,
+  "tileMaxRecordCount": 4000,
+  "maxRecordCountFactor": 1,
+  "capabilities": "Query"
+}
