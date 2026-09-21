@@ -70,6 +70,14 @@ federal_stat <- stat[stat$WATERS_CODE == "FED", ]
 ai_ll <- get_reporting_areas(c("541", "542", "543"), proj = 4326)
 ```
 
+## Spatial closures
+
+The [NOAA spatial-closures vignette](vignettes/Spatial-closures.Rmd) reviews
+habitat restrictions, Steller sea lion protections, fishery/gear layers, and
+inseason status sources. It includes a dated, offline GOA mapping example and
+GMT export, with an explicit distinction between GIS footprints and current
+legal closure status.
+
 ## GMT and the package website
 
 Export any bundled polygon layer with `write_gmt()` for use in GMT 6:

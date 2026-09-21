@@ -13,3 +13,6 @@
 
 - Added GMT/OGR polygon export with hole and dateline tests, a GMT tutorial,
   and pkgdown/GitHub Pages site configuration.
+
+- Added NOAA spatial-closures vignette, source catalog, and a provenance-tracked
+  two-record historical GOA habitat example with mapping and GMT export.

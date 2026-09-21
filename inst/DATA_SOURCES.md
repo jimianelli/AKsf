@@ -118,3 +118,17 @@ statistical-area compilation. Registration and statistical snapshots are the
 published groundfish series. FMP derivations have not been certified by the
 agencies. Validation tests establish code behavior, topology, and selected spatial
 relationships; they cannot prove legal equivalence to every FMP amendment.
+
+
+## NOAA closure vignette example
+
+`inst/extdata/closure-example` contains two records from NOAA AKRO's
+[Habitat_Restrictions layer](https://alaskafisheries.noaa.gov/arcgis/rest/services/Base_Map/MapServer/5):
+`GOA_Slope_HCA.htm` and `GOA_Coral_HPA.htm`. Retrieved 2026-09-21; both retain
+the source annotation `steve.lewis, akro, 01/19/15`. This is a historical
+teaching snapshot, not a current closure inventory. Original attributes and
+service geometry requested in WGS84 are preserved. The adjacent manifest
+records IDs, query URL, retrieval time, and SHA-256; layer metadata is included.
+NOAA/AKRO is the source; this U.S. federal government data is not relicensed
+as AKsf code. Retain attribution and consult NOAA regulations and notices for
+current restrictions. Regenerate with `data-raw/download-closure-example.py`.

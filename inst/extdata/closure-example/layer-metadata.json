@@ -1,0 +1,931 @@
+{
+ "currentVersion": 10.71,
+ "id": 5,
+ "name": "Habitat_Restrictions",
+ "type": "Feature Layer",
+ "description": "",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "HTM",
+   "field2": null,
+   "field3": null,
+   "defaultSymbol": null,
+   "defaultLabel": null,
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       255,
+       115,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        255,
+        0,
+        0,
+        255
+       ],
+       "width": 1
+      }
+     },
+     "value": "3nm_No_Transit.htm",
+     "label": "3nm_No_Transit.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       214,
+       133,
+       137,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "AI_Coral_HPA.htm",
+     "label": "AI_Coral_HPA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        197,
+        255,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "AI_HCA.htm",
+     "label": "AI_HCA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       137,
+       205,
+       102,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        137,
+        205,
+        102,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "ArcticFMP.htm",
+     "label": "ArcticFMP.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       112,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        132,
+        168,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "BS_3nm_No_Groundfish.htm",
+     "label": "BS_3nm_No_Groundfish.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "BS_HCA.htm",
+     "label": "BS_HCA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       210,
+       252,
+       223,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Bowers_Ridge.htm",
+     "label": "Bowers_Ridge.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       220,
+       179,
+       252,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Bowers_Seamount_HPA.htm",
+     "label": "Bowers_Seamount_HPA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       210,
+       210,
+       210,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        107,
+        126,
+        147,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Bristol_Bay_Open_April1June_15.htm",
+     "label": "Bristol_Bay_Open_April1June_15.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSForwardDiagonal",
+      "color": [
+       255,
+       170,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "CVOA.htm",
+     "label": "CVOA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       203,
+       192,
+       252,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Cook_inlet.htm",
+     "label": "Cook_inlet.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       179,
+       180,
+       252,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "GOA_Coral_HPA.htm",
+     "label": "GOA_Coral_HPA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       222,
+       252,
+       179,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "GOA_Slope_HCA.htm",
+     "label": "GOA_Slope_HCA.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       252,
+       197,
+       208,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "GOA_Type_1.htm",
+     "label": "GOA_Type_1.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       233,
+       252,
+       210,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "GOA_Type_2.htm",
+     "label": "GOA_Type_2.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       255,
+       127,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Marmot_Bay_Tanner_Crab_Protection_Area.htm",
+     "label": "Marmot_Bay_Tanner_Crab_Protection_Area.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSForwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Modified_Gear_Trawl_Zone.htm",
+     "label": "Modified_Gear_Trawl_Zone.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Near_Shore_Bristol_No_Trawl.htm",
+     "label": "Near_Shore_Bristol_No_Trawl.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSVertical",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Northern_BS_ResearchArea.htm",
+     "label": "Northern_BS_ResearchArea.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Nunivak_Kusko.htm",
+     "label": "Nunivak_Kusko.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       112,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "PWS_Rookeries_No_Fishing.htm",
+     "label": "PWS_Rookeries_No_Fishing.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       223,
+       115,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Prib_Hab_Cons_Area.htm",
+     "label": "Prib_Hab_Cons_Area.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Red_King_Crab_Closure_Area_GHR.htm",
+     "label": "Red_King_Crab_Closure_Area_GHR.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "SE_No_Trawl.htm",
+     "label": "SE_No_Trawl.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       168,
+       56,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Sitka_Pin.htm",
+     "label": "Sitka_Pin.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "St_Lawerence.htm",
+     "label": "St_Lawerence.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSBackwardDiagonal",
+      "color": [
+       115,
+       178,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        122,
+        182,
+        245,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "St_Matts.htm",
+     "label": "St_Matts.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       85,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        110,
+        110,
+        110,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Walrus_Islands_Transit_Area.htm",
+     "label": "Walrus_Islands_Transit_Area.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       245,
+       202,
+       122,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Walrus_Protection_Area_W_FFP.htm",
+     "label": "Walrus_Protection_Area_W_FFP.htm",
+     "description": ""
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       127,
+       127,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        255,
+        85,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Walrus_Round_Is_No_Entry.htm",
+     "label": "Walrus_Round_Is_No_Entry.htm",
+     "description": ""
+    }
+   ],
+   "fieldDelimiter": ","
+  },
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": false,
+ "extent": {
+  "xmin": -2.00375070672E7,
+  "ymin": 6087130.293399997,
+  "xmax": 2.0037507067199998E7,
+  "ymax": 1.2807709831E7,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "HTM",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "Shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID_1",
+   "type": "esriFieldTypeInteger",
+   "alias": "OBJECTID_1",
+   "domain": null
+  },
+  {
+   "name": "HTM",
+   "type": "esriFieldTypeString",
+   "alias": "HTM",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "dtd",
+   "type": "esriFieldTypeString",
+   "alias": "dtd",
+   "length": 33,
+   "domain": null
+  },
+  {
+   "name": "Shape_Leng",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Leng",
+   "domain": null
+  },
+  {
+   "name": "Shape_Length",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Length",
+   "domain": null
+  },
+  {
+   "name": "Shape_Area",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Area",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "Shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "FDO_OBJECTID",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "FDO_Shape",
+   "fields": "Shape",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsHavingClause": true,
+  "supportsCountDistinct": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true
+ },
+ "supportsDatumTransformation": true,
+ "supportsCoordinatesQuantization": true
+}

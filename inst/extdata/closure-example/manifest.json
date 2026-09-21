@@ -1,0 +1,17 @@
+{
+  "source_url": "https://alaskafisheries.noaa.gov/arcgis/rest/services/Base_Map/MapServer/5",
+  "query_url": "https://alaskafisheries.noaa.gov/arcgis/rest/services/Base_Map/MapServer/5/query?objectIds=12%2C15&outFields=%2A&outSR=4326&returnGeometry=true&f=geojson",
+  "where": "HTM IN ('GOA_Slope_HCA.htm','GOA_Coral_HPA.htm')",
+  "retrieved_utc": "2026-09-21T17:55:57.196414+00:00",
+  "feature_count": 2,
+  "object_ids": [
+    12,
+    15
+  ],
+  "sha256": "8bfe44950b7d18c9016a1e54297034dbfd6497e9f345282d4e6bd02d5aa579a7",
+  "source_dtd": [
+    "steve.lewis, akro, 01/19/15"
+  ],
+  "status": "Historical GIS teaching example, not current closure status",
+  "geometry": "Unmodified service response, requested WGS84 EPSG:4326"
+}
