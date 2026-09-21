@@ -1,0 +1,31 @@
+url: https://jimianelli.github.io/AKsf/
+destination: _site
+template:
+  bootstrap: 5
+home:
+  title: Alaska fisheries maps for R and GMT
+navbar:
+  structure:
+    left: [intro, reference, articles, news]
+    right: [search, github]
+reference:
+- title: Spatial data and provenance
+  contents:
+  - starts_with("get_")
+  - alaska_coast
+  - adfg_groundfish_registration_areas
+  - adfg_groundfish_statistical_areas
+  - fmp_areas
+  - nmfs_reporting_areas
+- title: Map layers and style
+  contents:
+  - starts_with("plot_")
+  - coord_aksf
+  - proj_aksf
+  - theme_aksf
+- title: GMT interoperability
+  contents:
+  - write_gmt
+- title: Package
+  contents:
+  - AKsf-package

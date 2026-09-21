@@ -6,3 +6,5 @@ data-raw/cache
 *.Rcheck/
 *.tar.gz
 Rplots.pdf
+
+_site/

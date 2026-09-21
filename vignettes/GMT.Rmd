@@ -1,0 +1,72 @@
+---
+title: "Use AKsf boundaries in GMT"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Use AKsf boundaries in GMT}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+AKsf provides the fisheries geometry; [GMT](https://www.generic-mapping-tools.org/)
+provides its own cartography. `write_gmt()` writes GMT/OGR polygon files through
+sf/GDAL. GMT is optional and is needed only when rendering a GMT figure.
+This preserves your GMT shell workflow rather than reimplementing GMT in R.
+
+## Export from R
+
+```{r, eval=FALSE}
+library(AKsf)
+write_gmt(get_fmp_areas("BSAI_GF"), "bsai.gmt")
+write_gmt(get_fmp_areas("GOA_GF"), "goa.gmt")
+write_gmt(get_reporting_areas(), "reporting.gmt")
+write_gmt(get_coast(), "land.gmt")
+```
+
+The output uses WGS84 longitude/latitude, retains identifiers and polygon holes,
+and splits multipart features and dateline crossings. Attributes repeat for each
+polygon part; rows are not necessarily unique areas. Existing files require
+`overwrite = TRUE`. The sf installation needs GDAL's writable GMT driver.
+
+## Render with GMT 6
+
+Install GMT using its [platform instructions](https://www.generic-mapping-tools.org/download/)
+(for example, `brew install gmt` on macOS). PNG/PDF output also needs Ghostscript.
+Run these commands in the directory containing the exported files:
+
+```bash
+gmt begin alaska-fmp png
+  gmt set FONT_TITLE 16p FONT_ANNOT_PRIMARY 9p MAP_FRAME_PEN 1p
+  gmt basemap -R170/235/48/72 -JB-154/50/55/65/18c -Baf -BWSne+t"Alaska groundfish FMP reference areas"
+  gmt plot bsai.gmt -Glightblue -W0.4p,steelblue -l"BSAI groundfish"
+  gmt plot goa.gmt -Glightgoldenrod -W0.4p,darkorange -l"GOA groundfish"
+  gmt plot reporting.gmt -W0.2p,gray40
+  gmt plot land.gmt -Ggray90 -W0.2p,gray50
+  gmt legend -DjTR+w4.5c+o0.3c -F+gwhite+p0.25p
+gmt end
+```
+
+This is a GMT Albers map with central meridian 154°W, latitude of origin 50°N,
+and standard parallels 55°N/65°N. Those parameters resemble AKsf's default,
+but GMT's geographic plotting is not a declaration that this figure is an
+EPSG:3338 dataset: exported coordinates are WGS84. The region uses 170–235°E
+so the Aleutians cross 180° continuously. Do not relabel projected metre
+coordinates as longitude/latitude or discard polygon-hole markers.
+
+The example uses bundled land rather than a remote coastline download. For
+higher-resolution basemaps, use GMT's coastline/relief facilities or akgfmaps
+sources with their own provenance. The fisheries boundaries remain AKsf's
+cartographic references, regardless of rendering tool.
+
+## Environmental grids
+
+Use coldpool's temperature products as the environmental source. `terra` can
+write a chosen upstream raster to a GMT-readable grid format such as GeoTIFF;
+GMT's `grdimage` can render it when GMT has GDAL support. Preserve its native CRS,
+missing values, registration, and units; an arbitrary projected grid is not a
+longitude/latitude grid. Check `gmt grdinfo` and transform explicitly if the GMT
+workflow requires geographic coordinates. Do not recompute the published
+cold-pool index from an FMP mask.
+
+See the repository's [AFSC integration guide](https://github.com/jimianelli/AKsf/blob/main/docs/AFSC-INTEGRATION.md)
+for overlap with coldpool, akgfmaps, and navmaps. AKsf does not duplicate their
+survey design, environmental models, or navigation exporters.

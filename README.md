@@ -39,7 +39,7 @@ ggplot() +
        caption = "AKsf reference geometry • NOAA / ADF&G • Natural Earth land")
 ```
 
-![Six NPFMC plans](docs/fmp-overview.png)
+![Six NPFMC plans](man/figures/fmp-overview.png)
 
 ## Included data
 
@@ -69,6 +69,24 @@ federal_stat <- stat[stat$WATERS_CODE == "FED", ]
 # Work in geographic coordinates when needed:
 ai_ll <- get_reporting_areas(c("541", "542", "543"), proj = 4326)
 ```
+
+## GMT and the package website
+
+Export any bundled polygon layer with `write_gmt()` for use in GMT 6:
+
+```r
+write_gmt(get_fmp_areas("BSAI_GF"), "bsai.gmt")
+```
+
+The [GMT tutorial](vignettes/GMT.Rmd) includes an Alaska Albers map recipe,
+dateline handling, and guidance for environmental grids. GMT is optional;
+export uses sf/GDAL and retains polygon holes and agency identifiers.
+
+![Alaska FMP map rendered with GMT](man/figures/gmt-alaska-fmp.png)
+
+A pkgdown website is configured for `https://jimianelli.github.io/AKsf/`.
+See [publishing instructions](docs/GITHUB-PAGES.md) for GitHub Pages activation
+and the difference between public documentation and package-source visibility.
 
 ## Working with AFSC GAP products
 

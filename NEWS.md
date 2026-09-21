@@ -10,3 +10,6 @@
 
 - Added AFSC ecosystem integration guide covering coldpool, akgfmaps, and navmaps,
   with explicit redundancy, complementary capabilities, and optional examples.
+
+- Added GMT/OGR polygon export with hole and dateline tests, a GMT tutorial,
+  and pkgdown/GitHub Pages site configuration.

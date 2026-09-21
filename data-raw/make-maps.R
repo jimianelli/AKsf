@@ -3,6 +3,7 @@ library(AKsf)
 library(ggplot2)
 library(sf)
 dir.create("docs", showWarnings = FALSE)
+dir.create("man/figures", recursive = TRUE, showWarnings = FALSE)
 land <- st_simplify(get_coast(), dTolerance = 300)
 fmp <- st_simplify(get_fmp_areas(), dTolerance = 300)
 labels <- c(BSAI_GF = "BSAI groundfish", GOA_GF = "Gulf of Alaska groundfish",
@@ -28,7 +29,7 @@ p <- ggplot() +
   labs(title = "AKsf | Alaska fisheries spatial features",
        subtitle = "Six NPFMC fishery management plans, with fishery-specific reference coverage",
        caption = "Sources: NOAA Fisheries, ADF&G, NPFMC definitions; Natural Earth land.\nDerived cartographic reference areas; not regulatory boundaries. Source vintages and methods: DATA_SOURCES.md.")
-ggsave("docs/fmp-overview.png", p, width = 12, height = 11, dpi = 160, bg = "white")
+ggsave("man/figures/fmp-overview.png", p, width = 12, height = 11, dpi = 160, bg = "white")
 
 salmon <- get_fmp_areas("SALMON")
 cook <- salmon[salmon$area_code == "SALMON_COOK_INLET", ]

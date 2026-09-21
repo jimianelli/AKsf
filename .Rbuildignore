@@ -9,3 +9,7 @@
 ^LICENSE-DATA\.md$
 ^docs$
 ^LICENSE\.md$
+
+^_pkgdown\.yml$
+^_site$
+^pkgdown$
