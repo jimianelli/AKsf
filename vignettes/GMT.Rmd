@@ -70,3 +70,12 @@ cold-pool index from an FMP mask.
 See the repository's [AFSC integration guide](https://github.com/jimianelli/AKsf/blob/main/docs/AFSC-INTEGRATION.md)
 for overlap with coldpool, akgfmaps, and navmaps. AKsf does not duplicate their
 survey design, environmental models, or navigation exporters.
+
+## Survey and seasonal catch case study
+
+The [Eastern Bering Sea survey and fishery maps article](https://jimianelli.github.io/AKsf/articles/pollock-maps.html)
+shows how AKsf geometry supports survey comparisons and catch columns over GMT
+Earth Relief. It includes shaded log-value views, matched map planes, an
+exaggerated terrain example, and simple input/update instructions. The archived
+figures use supplied observations; the article's executable example uses
+clearly labeled synthetic catch points and runs offline.

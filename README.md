@@ -72,7 +72,7 @@ ai_ll <- get_reporting_areas(c("541", "542", "543"), proj = 4326)
 
 ## Spatial closures
 
-The [NOAA spatial-closures vignette](vignettes/Spatial-closures.Rmd) reviews
+The [NOAA spatial-closures vignette](https://jimianelli.github.io/AKsf/articles/Spatial-closures.html) reviews
 habitat restrictions, Steller sea lion protections, fishery/gear layers, and
 inseason status sources. It includes a dated, offline GOA mapping example and
 GMT export, with an explicit distinction between GIS footprints and current
@@ -86,15 +86,24 @@ Export any bundled polygon layer with `write_gmt()` for use in GMT 6:
 write_gmt(get_fmp_areas("BSAI_GF"), "bsai.gmt")
 ```
 
-The [GMT tutorial](vignettes/GMT.Rmd) includes an Alaska Albers map recipe,
+The [GMT tutorial](https://jimianelli.github.io/AKsf/articles/GMT.html) includes an Alaska Albers map recipe,
 dateline handling, and guidance for environmental grids. GMT is optional;
 export uses sf/GDAL and retains polygon holes and agency identifiers.
 
 ![Alaska FMP map rendered with GMT](man/figures/gmt-alaska-fmp.png)
 
 A pkgdown website is configured for `https://jimianelli.github.io/AKsf/`.
-See [publishing instructions](docs/GITHUB-PAGES.md) for GitHub Pages activation
+See [publishing instructions](https://jimianelli.github.io/AKsf/docs/GITHUB-PAGES.md) for GitHub Pages activation
 and the difference between public documentation and package-source visibility.
+
+## Eastern Bering Sea pollock maps
+
+The [survey and fishery mapping article](https://jimianelli.github.io/AKsf/articles/pollock-maps.html) combines
+bottom-trawl CPUE and temperature, AVO/ATS comparisons, shaded log values, and
+2024–2026 seasonal catch. It includes nine saved figures and an offline,
+synthetic AKsf example. GMT supplies the bathymetry; source survey records and
+fishery haul extracts are maintained separately from the package. The 2026
+B-season figures are partial through 18 September 2026.
 
 ## Working with AFSC GAP products
 
@@ -109,7 +118,7 @@ surfaces and cold-pool indices, with AKsf boundaries as management context.
 Use [navmaps](https://github.com/afsc-gap-products/navmaps) for survey-layer exports;
 AKsf reference polygons can be handed off as explicitly labeled GIS outlines.
 
-See the [integration guide](docs/AFSC-INTEGRATION.md) for the **overlap and added-value
+See the [integration guide](https://jimianelli.github.io/AKsf/docs/AFSC-INTEGRATION.md) for the **overlap and added-value
 matrix**, concrete differences between area inventories, and runnable examples.
 No AFSC datasets or exporters are duplicated into AKsf by these integrations.
 
@@ -161,7 +170,7 @@ The East and Cook Inlet polygons are derived from ADF&G federal-water polygons.
   crab stock boundaries, salmon district grids, or every ADF&G fishery layer.
 
 Read [DATA_SOURCES.md](DATA_SOURCES.md) for methods, exact sources, known limits,
-and dataset licensing. The [tutorial](vignettes/AKsf.Rmd) demonstrates mapping
+and dataset licensing. The [tutorial](https://jimianelli.github.io/AKsf/articles/AKsf.html) demonstrates mapping
 and safe spatial joins.
 
 ## Rebuild and validate
