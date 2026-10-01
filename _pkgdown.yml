@@ -29,3 +29,12 @@ reference:
 - title: Package
   contents:
   - AKsf-package
+
+articles:
+- title: Mapping articles
+  navbar: ~
+  contents:
+  - AKsf
+  - GMT
+  - Spatial-closures
+  - pollock-maps

@@ -9,7 +9,7 @@ Description: Alaska fisheries mapping with simple features and composable
     management plans. Retains agency identifiers and data provenance and uses
     an Alaska Albers projection for mapping across the antimeridian.
 License: MIT + file LICENSE
-URL: https://github.com/jimianelli/AKsf
+URL: https://jimianelli.github.io/AKsf/, https://github.com/jimianelli/AKsf
 BugReports: https://github.com/jimianelli/AKsf/issues
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
