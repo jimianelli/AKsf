@@ -6,8 +6,18 @@ home:
   title: Alaska fisheries maps for R and GMT
 navbar:
   structure:
-    left: [intro, reference, articles, news]
+    left: [intro, reference, articles, guides, news]
     right: [search, github]
+  components:
+    guides:
+      text: Guides
+      menu:
+      - text: AFSC integrations
+        href: AFSC-INTEGRATION.html
+      - text: Source code
+        href: SOURCE-CODE.html
+      - text: Website publishing
+        href: GITHUB-PAGES.html
 reference:
 - title: Spatial data and provenance
   contents:

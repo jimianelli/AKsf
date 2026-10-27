@@ -23,6 +23,8 @@ jobs:
         with:
           extra-packages: any::pkgdown, local::.
           needs: website
+      - name: Test code disclosures
+        run: Rscript -e "testthat::test_file('pkgdown/test-code-disclosures.R', stop_on_failure=TRUE)"
       - name: Build website
         run: Rscript pkgdown/build.R
       - uses: actions/upload-pages-artifact@v3

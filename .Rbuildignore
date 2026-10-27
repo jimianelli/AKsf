@@ -13,3 +13,8 @@
 ^_pkgdown\.yml$
 ^_site$
 ^pkgdown$
+
+^AFSC-INTEGRATION\.md$
+^GITHUB-PAGES\.md$
+^SOURCE-CODE\.md$
+^man/figures/afsc-survey-temperature\.png$

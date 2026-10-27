@@ -1,0 +1,28 @@
+<style>
+details.code-disclosure { margin: 1em 0; border: 1px solid #767676; border-radius: .25em; }
+details.code-disclosure > summary { padding: .5em .75em; cursor: pointer; font-weight: 600; }
+details.code-disclosure > summary:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+details.code-disclosure > pre { margin: 0; }
+</style>
+<script>
+// Package vignettes use progressive enhancement: without JavaScript all source
+// stays visible. The pkgdown build writes native disclosures into the HTML.
+(function () {
+  if (!("open" in document.createElement("details"))) return;
+  document.querySelectorAll("pre").forEach(function (pre) {
+    if (pre.closest("details") || pre.closest(".r-output")) return;
+    var classes = pre.className + " " + (pre.querySelector("code") || {}).className;
+    var language = classes.match(/\b(r|bash|sh|python|yaml)\b/i);
+    if (!language && !/\bsourceCode\b/.test(classes)) return;
+    var name = language ? language[1] : "source";
+    name = name.toLowerCase() === "r" ? "R" : name;
+    var details = document.createElement("details");
+    details.className = "code-disclosure";
+    var summary = document.createElement("summary");
+    summary.textContent = "Show/hide " + name + " code";
+    pre.parentNode.insertBefore(details, pre);
+    details.appendChild(summary);
+    details.appendChild(pre);
+  });
+})();
+</script>

@@ -14,7 +14,7 @@ BugReports: https://github.com/jimianelli/AKsf/issues
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: sf, ggplot2, utils
-Suggests: testthat (>= 3.0.0), knitr, rmarkdown, jsonlite, roxygen2
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown, jsonlite, roxygen2, xml2
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 LazyData: true

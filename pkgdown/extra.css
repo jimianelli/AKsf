@@ -1,0 +1,25 @@
+/* Native disclosures work with JavaScript disabled. Keep the browser marker and
+   expose a strong focus indicator, including in forced-colour modes. */
+.code-disclosure {
+  margin-block: 1rem;
+  border: 1px solid GrayText;
+  border-radius: 0.35rem;
+  background: Canvas;
+  color: CanvasText;
+}
+
+.code-disclosure > summary {
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.code-disclosure > summary:focus {
+  outline: 3px solid Highlight;
+  outline-offset: 3px;
+}
+
+.code-disclosure > .sourceCode,
+.code-disclosure > pre {
+  margin-block: 0;
+}

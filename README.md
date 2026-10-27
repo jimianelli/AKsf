@@ -93,8 +93,14 @@ export uses sf/GDAL and retains polygon holes and agency identifiers.
 ![Alaska FMP map rendered with GMT](man/figures/gmt-alaska-fmp.png)
 
 A pkgdown website is configured for `https://jimianelli.github.io/AKsf/`.
-See [publishing instructions](https://jimianelli.github.io/AKsf/docs/GITHUB-PAGES.md) for GitHub Pages activation
+See [publishing instructions](https://jimianelli.github.io/AKsf/GITHUB-PAGES.html) for GitHub Pages activation
 and the difference between public documentation and package-source visibility.
+
+Code panels on the website let you show or hide source in the articles, guides,
+and function examples. Select a panel's summary, or focus it with Tab and press
+Enter or Space. Figures and results stay visible. The
+[source code guide](https://jimianelli.github.io/AKsf/SOURCE-CODE.html) also includes
+package functions, data preparation, tests, and website workflows.
 
 ## Eastern Bering Sea pollock maps
 
@@ -118,7 +124,7 @@ surfaces and cold-pool indices, with AKsf boundaries as management context.
 Use [navmaps](https://github.com/afsc-gap-products/navmaps) for survey-layer exports;
 AKsf reference polygons can be handed off as explicitly labeled GIS outlines.
 
-See the [integration guide](https://jimianelli.github.io/AKsf/docs/AFSC-INTEGRATION.md) for the **overlap and added-value
+See the [integration guide](https://jimianelli.github.io/AKsf/AFSC-INTEGRATION.html) for the **overlap and added-value
 matrix**, concrete differences between area inventories, and runnable examples.
 No AFSC datasets or exporters are duplicated into AKsf by these integrations.
 

@@ -29,6 +29,19 @@ source("pkgdown/build.R")
 pkgdown::preview_site()
 ```
 
+## Reading code on the website
+
+Articles, guides, and reference examples have source panels that you can show or
+hide independently of their results. Select a panel's summary, or use Tab to
+focus it and Enter or Space to toggle it. The Guides menu also opens the complete
+package, data-preparation, example, test, and website source listings.
+
+The build temporarily stages the two maintained guides and a generated source
+catalog as root Markdown files, then removes those staging copies on exit. It
+refuses to overwrite existing root copies. The source catalog includes tracked
+code files; examples that require GMT, upstream checkouts, or live agency
+services retain their stated dependencies.
+
 Generated HTML goes in ignored `_site/`, not the maintained `docs/` folder.
 The build copies supporting maps and integration examples into the site.
 GMT is not needed to build the documentation; its rendered example is a static

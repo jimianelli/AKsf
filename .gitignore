@@ -8,3 +8,9 @@ data-raw/cache
 Rplots.pdf
 
 _site/
+
+# Temporary Markdown staged by the website build.
+/AFSC-INTEGRATION.md
+/GITHUB-PAGES.md
+/SOURCE-CODE.md
+/man/figures/afsc-survey-temperature.png

@@ -1,6 +1,9 @@
 ---
 title: "Use AKsf boundaries in GMT"
-output: rmarkdown::html_vignette
+output:
+  rmarkdown::html_vignette:
+    includes:
+      after_body: code-folding.html
 vignette: >
   %\VignetteIndexEntry{Use AKsf boundaries in GMT}
   %\VignetteEngine{knitr::rmarkdown}
