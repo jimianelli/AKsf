@@ -110,6 +110,8 @@ build_aksf_site <- function() {
     )
   )
 
+  # Validate and initialise the destination before staging any site assets.
+  pkgdown::init_site()
   # Home-page image checks run before reference assets are copied by pkgdown.
   dir.create("_site/reference/figures", recursive = TRUE, showWarnings = FALSE)
   if (!file.copy(image_path, "_site/reference/figures", overwrite = TRUE)) {
